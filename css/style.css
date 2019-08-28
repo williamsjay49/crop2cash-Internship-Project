@@ -1,0 +1,128 @@
+body {
+	margin: 0px;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	color: #00E2E7;
+}
+
+/**main {
+	max-width: 800px;
+	margin: auto;
+}*/
+
+ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+nav a {
+    color: #28536B;
+    text-decoration: none;
+
+}
+
+h1 {
+	font-size: 150px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 50px;
+	margin: 0;
+}
+
+span {
+    margin-right: 15px;
+}
+
+p {
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #28536B;
+	margin: 0;
+}
+
+img {
+	border-radius: 150px;
+	border: 20px solid white;
+}
+
+footer {
+	background-color: #28536B;
+	color: #FDFFFF;
+	padding: 50px 0px;
+}
+footer p {
+	color: #FDFFFF;
+}
+
+/***** class selectors *****/
+
+
+
+.blue-bg-section {
+	padding: 200px 0px;
+	background-color: #00E2E7;
+	color: #FDFFFF;
+}
+
+.white-bg-section {
+	margin: 200px 50px;
+	padding: 50px;
+}
+
+/** header styling ***/
+.top {
+	color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00E2E7;
+	line-height: 1;
+	height: 90vh;
+}
+
+/*** about-us icon **/
+.icon {
+	max-width: 9%;
+}
+
+/**** Google button styling **/
+.g-signin2{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/****** Button styling ***/
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 2px 0;
+
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  padding: 0.5em 1em;
+
+  color: #ffffff;
+  background-color: #00E2E7;
+}
+
+.data {
+	display: none;
+}
