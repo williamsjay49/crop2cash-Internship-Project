@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/profile-img.png">
+
+	<!-- Load google platform library -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	
+	<!--specify your client's ID -->
+	<meta name="google-signin-client_id" content="261089789386-g85jvo27totu7a6v7c7ohv797g75foer.apps.googleusercontent.com">
+
+	<!-- Load jQuery Google CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Google signIn button -->
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+	<!-- Hompage -->
+	<div class="data">
+		<nav>
+			<ul>
+				<li><a href = "#">Home</a></li> 
+				<li><a href = "#img">Image</a></li> 
+				<li><a href = "#email">Email</a></li>
+				
+			</ul> 
+		</nav>
+		<header class = "top">
+			<div>
+				<h1 id = "user-name"></h1>
+			</div>
+		</header>
+		<main>
+			<!-- About us section -->
+			<section class="white-bg-section">
+				<img src="img/about-us.png" class="icon"/>
+				<h2>About Us</h2>
+				<p>We bring all your basic information in one place. Awesome, right?</p>
+			</section>
+
+			<!-- User Profile Image -->
+			<section class="blue-bg-section" id = "img">
+				<img id = "pic" width = "200px" height = "200px"/>
+				<h2>Your Profile Image</h2>
+			</section>
+
+			<!-- User Email Address -->
+			<section class="white-bg-section" id = "email"> 
+				<h2>Your Email address</h2>
+				<p id = "user-email"></p>
+			</section>
+		</main>
+		<footer>
+			<span>This website is a project of Crop2Cash &copy;</span>
+			<button onclick = "signOut()" class = "btn">Sign Out</button>
+		</footer>
+	</div>
+	
+  	<!-- Import javascript file -->
+  	<script src="script.js"></script>
+</body>
+</html>
